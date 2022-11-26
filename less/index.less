@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+
+
+}
+
+.box {
+    max-width: 1920px;
+    min-width: 1024px;
+    margin: 0 auto;
+    padding: 1%;
+    padding-top: 1rem;
+    background: url(../img/logo.png) no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    /*内容(左)*/
+    .main {
+        display: flex;
+        flex: 3;
+
+
+        flex-direction: column;
+
+        .h {
+            height: 1.5rem;
+        }
+
+        /*边框样式及内容定位*/
+        .pre {
+            border: 1px solid transparent;
+            border-width: .6375rem .575rem .3125rem 1.62rem;
+            border-image-source: url(../img/border.png);
+            border-image-slice: 51 46 25 129;
+            position: relative;
+            margin-bottom: 5%;
+
+            .con {
+                position: absolute;
+                top: -0.6375rem;
+                right: -0.575rem;
+                bottom: -0.3125rem;
+                left: -1.62rem;
+                padding: 0.25rem 0.325rem;
+
+                h3 {
+                    font-size: .3rem;
+                    font-weight: 100;
+                }
+
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        h4 {
+                            text-align: center;
+                            font-size: .4rem;
+                            color: white;
+                            margin-bottom: .0625rem;
+                        }
+
+                        p {
+                            font-size: .025rem;
+                            color: #4c9bfd;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+
+                            span {
+                                display: block;
+                                width: .0625rem;
+                                height: .15rem;
+                                margin-right: .125rem;
+                                border-radius: 0.2rem;
+                                background-color: #4c9bfd;
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            span {
+                                background-color: rgb(131, 202, 166);
+                            }
+                        }
+
+                        &:nth-of-type(3) {
+                            span {
+                                background-color: rgb(131, 202, 166);
+                            }
+                        }
+
+                        &:nth-of-type(4) {
+                            span {
+                                background-color: rgb(219, 78, 63);
+                            }
+                        }
+                    }
+                }
+            }
+
+            h3 {
+                font-size: 0.25rem;
+                color: white;
+                font-weight: 400;
+            }
+        }
+
+        /*中间*/
+        &:nth-of-type(2) {
+            flex: 4;
+            margin: 0 0.3rem;
+            padding-top: .6rem;
+            display: flex;
+
+
+            h3 {
+                font-size: 0.25rem;
+                color: white;
+                font-weight: 400;
+                padding-left: .5rem;
+                background: url(../img/shebei.png) no-repeat;
+                background-size: .34rem;
+                margin-bottom: .25rem;
+            }
+
+            .fj {
+                flex: 1;
+                width: 100%;
+                height: 6.6rem;
+                background-color: rgba(255, 255, 255, 0.05);
+            }
+
+            .tj {
+                margin-top: 0.4rem;
+                height: 5rem;
+
+                .tj_b {
+
+                    h3 {
+                        padding: 0;
+                        background: url();
+
+                    }
+
+                    .fb {
+                        display: flex;
+
+                        .b_a {
+                            flex: 2;
+                            height: 4rem;
+                            width: 100%;
+                        }
+
+                        .b_b {
+                            flex: 0.8;
+                            padding: .4rem .3rem;
+                            background-image: url(../img/rect.png);
+                            background-size: cover;
+
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+
+                                li {
+                                    height: 1.5rem;
+
+                                    p {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        font-size: .4rem;
+                                        color: white;
+
+                                        &:nth-of-type(2) {
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            align-items: center;
+                                            font-size: 16px;
+                                            color: rgb(248, 171, 103);
+
+                                            span {
+                                                display: block;
+                                                width: .11rem;
+                                                height: .2rem;
+                                                background-color: rgb(222, 60, 60);
+                                            }
+                                        }
+
+                                        .p_s {
+                                            background-color: rgb(234, 207, 25) !important;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(3) {
+            flex: 3;
+
+            /*订单量*/
+            .m_l {
+                .l_a {
+                    height: 2rem;
+
+                    h3 {
+                        display: flex;
+                        align-items: center;
+                        font-size: .28rem;
+
+                        a {
+                            display: block;
+                            text-align: center;
+                            width: 1.2rem;
+                            font-weight: 100;
+                            border-right: .025rem solid rgb(111, 238, 239);
+
+                            &:last-of-type {
+                                border-right: none;
+                            }
+                        }
+
+                        .cu {
+                            font-size: .32rem;
+                            color: white;
+                            font-weight: 900;
+                        }
+
+                    }
+
+                    .nr {
+                        padding-left: .125rem;
+                        display: flex;
+
+                        .n_a {
+                            flex: 1;
+
+                            h3 {
+                                margin-top: .125rem;
+                                color: white;
+                                font-size: .35rem;
+                                font-weight: 400;
+                            }
+
+                            &>.p_a {
+                                font-size: 0.18rem;
+                                margin-top: .0625rem;
+                                color: rgb(13, 73, 196);
+                                display: flex;
+                                align-items: center;
+
+                                a {
+                                    color: rgb(76, 155, 253);
+                                }
+
+                                span {
+                                    display: block;
+                                    width: .05rem;
+                                    height: .2rem;
+                                    border-radius: .0625rem;
+                                    margin-right: .1rem;
+                                    background-color: rgb(219, 78, 63);
+                                }
+
+                                .y {
+                                    background-color: rgb(234, 207, 25);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /*销售额*/
+            .xs {
+                height: 3rem;
+
+                h3 {
+                    display: flex;
+                    font-weight: 400;
+                    align-items: center;
+
+                    span {
+                        display: block;
+                        flex: 1;
+                        border-right: 2px solid rgb(111, 238, 239);
+                    }
+
+                    .tm {
+                        flex: 2;
+                        display: flex;
+                        justify-content: space-around;
+                        padding-right: 1.375rem;
+
+                        a {
+                            font-size: 0.25rem;
+                            font-weight: 100;
+                            padding: 1%;
+                        }
+
+                        .bg {
+                            color: white;
+                            font-weight: 400;
+                            border-radius: .025rem;
+                            background-color: rgb(76, 155, 253);
+                        }
+                    }
+                }
+
+                .zx {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 3rem;
+
+                    .dw {
+                        position: absolute;
+                        font-size: .2rem;
+                        color: #4c9bfd;
+                        left: .4rem;
+                        top: 2%;
+                    }
+
+                    .tu {
+                        width: 100%;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            /*雷达与进度*/
+            .ll {
+                display: flex;
+                height: 3.6rem;
+                justify-content: space-between;
+
+                .zb {
+                    width: 54%;
+
+                    .ld {
+                        height: 2.8rem;
+                    }
+                }
+
+                .yb {
+                    width: 44%;
+
+                    h2 {
+                        font-size: .5rem;
+                        font-weight: 400;
+                        color: white;
+                        margin-top: .15rem;
+                        padding: .25rem 0;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: .4rem;
+                        color: white;
+
+                        span {
+                            margin-right: .125rem;
+                        }
+
+                        &:nth-of-type(2) {
+                            padding: .125rem 0;
+                            display: flex;
+
+                            a {
+                                width: 50%;
+                                font-size: .2rem;
+                                color: rgb(76, 253, 226);
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+
+                                span {
+                                    width: .05rem;
+                                    height: .125rem;
+                                    display: inline-block;
+                                    background-color: red;
+                                }
+
+                                &:nth-of-type(2) {
+                                    span {
+                                        background-color: aqua;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .di {
+                height: 3.9rem;
+
+                .water {
+                    height: 3rem;
+                }
+
+                .right {
+                    height: 2.9rem;
+                    width: 30%;
+                }
+            }
+        }
+
+        /*故障检测*/
+        .jk {
+            height: 6rem;
+            padding: 1%;
+
+            /*检测栏*/
+            h3 {
+                display: flex;
+                align-items: center;
+
+                a {
+                    font-size: .25rem;
+                    color: rgb(13, 73, 196);
+                }
+
+                .active {
+                    font-size: .25rem;
+                    color: white;
+                }
+
+                span {
+                    display: block;
+                    width: .0625rem;
+                    height: .5rem;
+                    background-color: rgb(111, 238, 239);
+                    margin: .125rem;
+                }
+            }
+
+            /*数据大屏*/
+            .g_z {
+                overflow: hidden;
+
+                .r_s {
+                    background-color: rgb(27, 50, 89);
+                }
+
+                .row {
+                    padding: 0;
+                    height: .6rem;
+                    line-height: .6rem;
+                    font-size: .2rem;
+
+                    display: flex;
+
+                    .col {
+                        color: rgb(111, 238, 239);
+                        flex: 1;
+
+                        &:nth-of-type(2) {
+                            flex: 3;
+                        }
+
+                        &:nth-of-type(3) {
+                            flex: 1;
+                        }
+                    }
+                }
+
+                /*数据滚动*/
+                .roll {
+                    overflow: hidden;
+                    height: 4rem;
+
+                    .yc {
+                        animation: move linear 5s infinite;
+
+                        &:hover {
+                            animation-play-state: paused;
+                        }
+
+
+
+                        .row {
+
+                            &:hover {
+                                background-color: rgba(107, 184, 184, 0.3);
+                            }
+
+                            .col {
+                                color: #4c9bfd;
+
+
+                            }
+
+
+                        }
+
+
+                    }
+
+                }
+            }
+
+
+        }
+
+        /*点位分布统计*/
+        .f_b {
+            height: 5rem;
+
+            .fb {
+                display: flex;
+
+                .left {
+                    flex: 1.5;
+                    padding: 1%;
+                }
+
+                .right {
+                    flex: 0.8;
+                    padding: .4rem .3rem;
+                    background-image: url(../img/rect.png);
+                    background-size: cover;
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+
+                        li {
+                            height: 1.5rem;
+
+                            p {
+                                display: flex;
+                                justify-content: flex-start;
+                                font-size: .4rem;
+                                color: white;
+
+                                &:nth-of-type(2) {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    font-size: 16px;
+                                    color: rgb(248, 171, 103);
+
+                                    span {
+                                        display: block;
+                                        width: .11rem;
+                                        height: .2rem;
+                                        background-color: rgb(222, 60, 60);
+                                    }
+                                }
+
+                                .p_s {
+                                    background-color: rgb(234, 207, 25) !important;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    @keyframes move {
+        0% {}
+
+        100% {
+            transform: translateY(-40%);
+        }
+
+    }
+}
